@@ -1,0 +1,218 @@
+producto.html<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FeastSync Hub - Detalles del Producto</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Bootstrap Icons para mantener coherencia con los iconos bi -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f8fafc;color:#1e293b}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;background:#fff;box-shadow:0 2px 15px rgba(0,0,0,.08);position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}.logo-icon{width:50px;height:50px;border-radius:15px;background:linear-gradient(135deg,#2563eb,#38bdf8);display:flex;justify-content:center;align-items:center;color:#fff;font-weight:bold;font-size:16px;box-shadow:0 10px 20px rgba(37,99,235,.3)}
+.logo-text h2{font-size:24px;color:#2563eb;line-height:20px}.logo-text span{font-size:11px;letter-spacing:3px;color:#64748b}
+nav{display:flex;align-items:center;gap:20px}nav a{text-decoration:none;color:#334155;font-weight:500}nav a:hover{color:#2563eb}
+.btn-lang{background:transparent;border:1px solid #0ea5e9;color:#0ea5e9;padding:5px 12px;border-radius:20px;font-size:13px;font-weight:600;cursor:pointer;transition:.2s}
+.btn-lang:hover{background:#0ea5e9;color:#fff}
+.btn-return{background:#2563eb;color:#fff!important;padding:6px 15px;border-radius:20px;font-size:14px;display:inline-flex;align-items:center}
+.btn-return:hover{background:#1d4ed8!important}
+.breadcrumb{padding:20px 8% 0;font-size:14px;color:#64748b}.breadcrumb a{color:#2563eb;text-decoration:none}
+.product-detail{display:grid;grid-template-columns:1fr 1fr;align-items:start;padding:40px 8% 70px;gap:60px}.product-detail img{width:100%;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,.15)}
+.tag{display:inline-block;font-size:12px;letter-spacing:1px;color:#2563eb;background:#eff6ff;padding:5px 12px;border-radius:20px;margin-bottom:14px;font-weight:600}
+.product-detail h1{font-size:42px;margin-bottom:15px;line-height:1.2}.price{font-size:38px;font-weight:bold;color:#059669;margin-bottom:20px}
+.description{font-size:17px;line-height:30px;color:#64748b;margin-bottom:30px}.buttons{display:flex;gap:20px;margin-bottom:35px}
+.buy{background:#2563eb;color:#fff;padding:15px 35px;border:none;border-radius:50px;cursor:pointer;font-size:17px}.back{background:#fff;color:#2563eb;border:2px solid #2563eb;padding:15px 35px;border-radius:50px;text-decoration:none}
+.quick-specs{display:grid;grid-template-columns:1fr 1fr;gap:15px}.spec{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:15px}.spec h4{color:#2563eb;font-size:13px;margin-bottom:5px}
+.payment-section{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:24px;margin-bottom:25px;box-shadow:0 4px 12px rgba(0,0,0,.03)}.payment-section h3{font-size:18px;margin-bottom:4px}.sub-text{font-size:13px;color:#64748b;margin-bottom:16px}
+.payment-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:18px}.payment-option{display:flex;align-items:center;gap:12px;padding:12px 14px;border:2px solid #e2e8f0;border-radius:12px;cursor:pointer;background:#fafafa}.payment-option:hover{border-color:#93c5fd;background:#f0f9ff}.payment-option input{accent-color:#2563eb;width:18px;height:18px}.payment-option-info{display:flex;flex-direction:column}.title{font-size:13px;font-weight:600}.desc{font-size:11px;color:#64748b}
+.payment-icons{display:flex;justify-content:space-between;padding-top:14px;border-top:1px dashed #e2e8f0}.payment-badge{font-size:12px;color:#475569;font-weight:500}
+.features{padding:80px 8%;background:#fff}.features-title{text-align:center;font-size:40px;margin-bottom:50px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card{background:#f8fafc;padding:30px;border-radius:20px;border:1px solid #e2e8f0;transition:.3s}.card:hover{transform:translateY(-8px);box-shadow:0 15px 25px rgba(0,0,0,.1)}.icon{font-size:40px;margin-bottom:15px}.card h3{margin-bottom:15px}
+.cta{padding:80px 8%;text-align:center;background:#2563eb;color:#fff}.cta h2{font-size:42px;margin-bottom:20px}.cta p{font-size:18px;margin-bottom:30px}.cta button{padding:15px 40px;border:none;background:#fff;color:#2563eb;font-size:18px;border-radius:50px;cursor:pointer;font-weight:bold}
+footer{background:#0f172a;color:#fff;padding:40px;text-align:center}footer p{margin:8px 0}
+@media(max-width:900px){.product-detail{grid-template-columns:1fr}header{flex-direction:column;gap:20px}nav{flex-wrap:wrap;justify-content:center}}@media(max-width:600px){.payment-grid{grid-template-columns:1fr}.payment-icons{flex-direction:column;gap:10px}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html">
+    <div class="logo-icon">FS</div>
+    <div class="logo-text">
+      <h2>FeastSync</h2>
+      <span data-es="NUTRICIÓN INTELIGENTE PARA MASCOTAS" data-en="SMART PET NUTRITION">NUTRICIÓN INTELIGENTE PARA MASCOTAS</span>
+    </div>
+  </a>
+  <nav>
+    <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a>
+    <a href="#shop" data-es="Tienda" data-en="Shop">Tienda</a>
+    <a href="#features" data-es="Características" data-en="Features">Características</a>
+    <a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a>
+    
+    <!-- Botón de idioma -->
+    <button id="btnIdioma" class="btn-lang">🇺🇸 English</button>
+
+    <!-- Botón volver -->
+    <a class="nav-link btn-return" href="../index.php#trabajos">
+      <i class="bi bi-arrow-left me-1"></i> <span data-es="Volver" data-en="Return">Volver</span>
+    </a>
+  </nav>
+</header>
+
+<div class="breadcrumb">
+  <a href="index.html" data-es="Inicio" data-en="Home">Inicio</a> / FeastSync Hub
+</div>
+
+<section class="product-detail">
+  <div><img src="img/comedorcat.png" alt="FeastSync Hub"></div>
+  <div>
+    <span class="tag" data-es="TECNOLOGÍA DE ALIMENTACIÓN BIOMÉTRICA" data-en="BIOMETRIC FEEDING TECH">TECNOLOGÍA DE ALIMENTACIÓN BIOMÉTRICA</span>
+    <h1>FeastSync Hub</h1>
+    <div class="price">COP $429,900</div>
+    <p class="description" 
+       data-es="FeastSync Hub es un alimentador inteligente automatizado diseñado para la nutrición precisa de mascotas. Con reconocimiento RFID, pesaje de precisión integrado y microdosificación basada en actividad, garantiza que cada mascota reciba la cantidad exacta de comida que necesita mientras realiza un seguimiento de las tendencias de salud en tiempo real." 
+       data-en="FeastSync Hub is an automated smart feeder designed for precise pet nutrition. Featuring RFID recognition, built-in precision weighing, and activity-based micro-dosing, it ensures each pet gets the exact amount of food they need while tracking health trends in real time.">
+      FeastSync Hub es un alimentador inteligente automatizado diseñado para la nutrición precisa de mascotas. Con reconocimiento RFID, pesaje de precisión integrado y microdosificación basada en actividad, garantiza que cada mascota reciba la cantidad exacta de comida que necesita mientras realiza un seguimiento de las tendencias de salud en tiempo real.
+    </p>
+
+    <div class="payment-section">
+      <h3 class="shop" id="shop" data-es="💳 Selecciona el Método de Pago" data-en="💳 Select Payment Method">💳 Selecciona el Método de Pago</h3>
+      <p class="sub-text" data-es="Elige tu opción de pago seguro preferida:" data-en="Choose your preferred secure payment option at checkout:">Elige tu opción de pago seguro preferida:</p>
+      
+      <div class="payment-grid">
+        <label class="payment-option">
+          <input type="radio" name="payment_method" value="card" checked>
+          <div class="payment-option-info">
+            <span class="title" data-es="Tarjeta de Crédito / Débito" data-en="Credit / Debit Card">Tarjeta de Crédito / Débito</span>
+            <span class="desc" data-es="Visa, Mastercard, American Express" data-en="Visa, Mastercard, American Express">Visa, Mastercard, American Express</span>
+          </div>
+        </label>
+
+        <label class="payment-option">
+          <input type="radio" name="payment_method" value="pse">
+          <div class="payment-option-info">
+            <span class="title" data-es="PSE / Transferencia Bancaria" data-en="PSE / Bank Transfer">PSE / Transferencia Bancaria</span>
+            <span class="desc" data-es="Débito directo desde bancos locales" data-en="Direct debit from local bank accounts">Débito directo desde bancos locales</span>
+          </div>
+        </label>
+
+        <label class="payment-option">
+          <input type="radio" name="payment_method" value="cash">
+          <div class="payment-option-info">
+            <span class="title" data-es="Pago Contra Entrega" data-en="Cash on Delivery">Pago Contra Entrega</span>
+            <span class="desc" data-es="Paga cuando recibas tu pedido" data-en="Pay when you receive your order">Paga cuando recibas tu pedido</span>
+          </div>
+        </label>
+
+        <label class="payment-option">
+          <input type="radio" name="payment_method" value="wallet">
+          <div class="payment-option-info">
+            <span class="title" data-es="Billetera Digital" data-en="Digital Wallet">Billetera Digital</span>
+            <span class="desc" data-es="Pago en línea rápido y seguro" data-en="Fast and secure online payment">Pago en línea rápido y seguro</span>
+          </div>
+        </label>
+      </div>
+
+      <div class="payment-icons">
+        <div class="payment-badge" data-es="🔒 Encriptación SSL de 256 bits" data-en="🔒 256-Bit SSL Encrypted">🔒 Encriptación SSL de 256 bits</div>
+        <div class="payment-badge" data-es="⚡ Aprobación Inmediata" data-en="⚡ Instant Approval">⚡ Aprobación Inmediata</div>
+        <div class="payment-badge" data-es="🛡️ Protección al Comprador" data-en="🛡️ Buyer Protection">🛡️ Protección al Comprador</div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="buy" data-es="Comprar Ahora" data-en="Buy Now">Comprar Ahora</button>
+      <a class="back" href="index.html" data-es="Volver al Inicio" data-en="Back to Home">Volver al Inicio</a>
+    </div>
+
+    <div class="quick-specs">
+      <div class="spec">
+        <h4 data-es="Material" data-en="Material">Material</h4>
+        <p data-es="Polímero Grado Alimenticio ABS y Tazón de Acero Inoxidable" data-en="ABS Food-Grade Polymer & Stainless Steel Bowl">Polímero Grado Alimenticio ABS y Tazón de Acero Inoxidable</p>
+      </div>
+      <div class="spec">
+        <h4 data-es="Capacidad" data-en="Capacity">Capacidad</h4>
+        <p data-es="3.5 L (Comida Seca) + Compartimento Refrigerado" data-en="3.5 L (Dry Food) + Cooling Compartment">3.5 L (Comida Seca) + Compartimento Refrigerado</p>
+      </div>
+      <div class="spec">
+        <h4 data-es="Colores" data-en="Colors">Colores</h4>
+        <p data-es="Blanco Mate, Gris Espacial, Verde Salvia" data-en="Matte White, Space Gray, Sage Green">Blanco Mate, Gris Espacial, Verde Salvia</p>
+      </div>
+      <div class="spec">
+        <h4 data-es="Entrega" data-en="Delivery">Entrega</h4>
+        <p data-es="Estándar, Exprés y Recogida en Tienda" data-en="Standard, Express & Store Pickup">Estándar, Exprés y Recogida en Tienda</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <h2 class="features-title" data-es="¿Por qué elegir FeastSync?" data-en="Why Choose FeastSync?">¿Por qué elegir FeastSync?</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🐱</div>
+      <h3 data-es="Reconocimiento Biométrico" data-en="Biometric Recognition">Reconocimiento Biométrico</h3>
+      <p data-es="Se desbloquea solo para la mascota designada mediante microchips RFID o etiquetas inteligentes para evitar el robo de comida." data-en="Unlocks only for the designated pet using RFID microchips or smart tags to prevent food theft.">Se desbloquea solo para la mascota designada mediante microchips RFID o etiquetas inteligentes para evitar el robo de comida.</p>
+    </div>
+    <div class="card">
+      <div class="icon">⚖️</div>
+      <h3 data-es="Báscula Digital Integrada" data-en="Integrated Digital Scale">Báscula Digital Integrada</h3>
+      <p data-es="Pesa la comida antes y después de las comidas para registrar el consumo exacto al gramo." data-en="Weighs food before and after meals to log exact consumption down to the gram.">Pesa la comida antes y después de las comidas para registrar el consumo exacto al gramo.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3 data-es="Microdosificación Dinámica" data-en="Dynamic Micro-Dosing">Microdosificación Dinámica</h3>
+      <p data-es="Ajusta las porciones diarias según los datos del nivel de actividad sincronizados desde el collar inteligente de tu mascota." data-en="Adjusts daily meal sizes based on activity level data synced from your pet's smart collar.">Ajusta las porciones diarias según los datos del nivel de actividad sincronizados desde el collar inteligente de tu mascota.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🥫</div>
+      <h3 data-es="Compartimento Doble Seco y Húmedo" data-en="Dual Dry & Wet Compartment">Compartimento Doble Seco y Húmedo</h3>
+      <p data-es="Incluye un módulo refrigerado diseñado para mantener fresca la comida húmeda durante todo el día." data-en="Includes a chilled module designed to keep wet food fresh throughout the day.">Incluye un módulo refrigerado diseñado para mantener fresca la comida húmeda durante todo el día.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔔</div>
+      <h3 data-es="Sistema de Alerta de Salud" data-en="Health Alert System">Sistema de Alerta de Salud</h3>
+      <p data-es="Envía notificaciones móviles instantáneas si se detectan cambios en el apetito o la velocidad al comer." data-en="Sends instant mobile notifications if changes in appetite or eating speed are detected.">Envía notificaciones móviles instantáneas si se detectan cambios en el apetito o la velocidad al comer.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔒</div>
+      <h3 data-es="Puerta Neumática Hermética" data-en="Airtight Pneumatic Door">Puerta Neumática Hermética</h3>
+      <p data-es="Protege la comida de la oxidación, la mantiene crujiente y sella los olores por completo." data-en="Protects food from oxidation, keeps it crunchy, and seals away odors completely.">Protege la comida de la oxidación, la mantiene crujiente y sella los olores por completo.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="contact" id="contact">
+  <h3 data-es="Atención al Cliente" data-en="Customer Service">Atención al Cliente</h3>
+  <p>📧 support@feastsync.com</p>
+  <p>📞 +57 300 123 4567</p>
+  <p data-es="💬 Chat en vivo disponible 24/7" data-en="💬 Live Chat Available 24/7">💬 Chat en vivo disponible 24/7</p>
+  <br>
+  <p data-es="© 2026 FeastSync. Todos los derechos reservados." data-en="© 2026 FeastSync. All Rights Reserved.">© 2026 FeastSync. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+let idiomaActual = "es";
+
+document.getElementById("btnIdioma").addEventListener("click", function () {
+    const elementos = document.querySelectorAll("[data-es][data-en]");
+
+    if (idiomaActual === "es") {
+        elementos.forEach(elemento => {
+            elemento.textContent = elemento.getAttribute("data-en");
+        });
+        this.innerHTML = "🇨🇴 Español";
+        idiomaActual = "en";
+    } else {
+        elementos.forEach(elemento => {
+            elemento.textContent = elemento.getAttribute("data-es");
+        });
+        this.innerHTML = "🇺🇸 English";
+        idiomaActual = "es";
+    }
+});
+</script>
+
+</body>
+</html>

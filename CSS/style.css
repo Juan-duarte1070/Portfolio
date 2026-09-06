@@ -1,0 +1,420 @@
+/* =========================
+   VARIABLES GLOBALES
+========================= */
+
+:root {
+    --fondo: #ffffff;
+    --texto: #212529;
+    --fondo-secundario: #f8f9fa;
+    --card: #ffffff;
+    --borde: #dee2e6;
+}
+
+[data-theme="oscuro"] {
+    --fondo: #0f172a;
+    --texto: #ffffff;
+    --fondo-secundario: #1e293b;
+    --card: #1e293b;
+    --borde: #334155;
+}
+
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section {
+    background-color: var(--fondo);
+    color: var(--texto);
+}
+
+.card {
+    background-color: var(--card);
+    color: var(--texto);
+    border-color: var(--borde);
+}
+
+a, .btn, .card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* =========================================
+   NAVBAR (AZUL OSCURO FIX UNIFICADO)
+========================================= */
+
+/* Fondo azul azul noche persistente */
+.navbar-tema,
+header .navbar-tema,
+nav.navbar-tema,
+[data-theme="claro"] .navbar-tema,
+[data-theme="oscuro"] .navbar-tema {
+    background-color: #0f172a !important;
+    background: #0f172a !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.15) !important;
+}
+
+/* Forzar textos en blanco para la marca y enlaces */
+.navbar-tema .navbar-brand,
+.navbar-tema .nav-link,
+[data-theme="claro"] .navbar-tema .navbar-brand,
+[data-theme="claro"] .navbar-tema .nav-link,
+[data-theme="oscuro"] .navbar-tema .navbar-brand,
+[data-theme="oscuro"] .navbar-tema .nav-link {
+    color: #ffffff !important;
+}
+
+/* Efecto hover en enlaces */
+.nav-link-custom {
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+.nav-link-custom:hover,
+[data-theme="claro"] .nav-link-custom:hover,
+[data-theme="oscuro"] .nav-link-custom:hover {
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    color: #38bdf8 !important;
+    transform: translateY(-1px);
+}
+
+/* Icono hamburguesa en blanco */
+.navbar-toggler-icon,
+[data-theme="claro"] .navbar-toggler-icon,
+[data-theme="oscuro"] .navbar-toggler-icon {
+    filter: invert(1) !important;
+}
+
+/* Desplegable móvil */
+@media (max-width: 991.98px) {
+    .navbar-collapse,
+    [data-theme="claro"] .navbar-collapse,
+    [data-theme="oscuro"] .navbar-collapse {
+        background-color: #0f172a !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+}
+
+/* =========================================
+   HERO SECTION Y TARJETAS
+========================================= */
+
+header.hero-section,
+[data-theme="claro"] header.hero-section,
+[data-theme="oscuro"] header.hero-section {
+    background: #0f172a !important;
+    border-bottom: 1px solid var(--borde);
+}
+
+.hero-text-card,
+[data-theme="claro"] .hero-text-card,
+[data-theme="oscuro"] .hero-text-card {
+    background: #1e293b !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(56, 189, 248, 0.3) !important;
+    box-shadow: 0 20px 40px rgba(2, 6, 23, 0.6) !important;
+}
+
+.hero-text-card h1, 
+.hero-text-card h1.text-white,
+[data-theme="claro"] .hero-text-card h1,
+[data-theme="claro"] .hero-text-card .display-4 {
+    color: #ffffff !important;
+}
+
+.hero-text-card p,
+.hero-text-card p.lead,
+[data-theme="claro"] .hero-text-card p,
+[data-theme="claro"] .hero-text-card .lead {
+    color: #e2e8f0 !important;
+}
+
+.hero-icon-box {
+    background-color: var(--fondo-secundario);
+    border: 2px solid var(--borde);
+    transition: transform 0.3s ease;
+}
+
+.hero-icon-box:hover {
+    transform: scale(1.05);
+}
+
+.hero-icon-glow {
+    transition: transform 0.4s ease;
+}
+
+.hero-icon-glow:hover {
+    transform: scale(1.03);
+}
+
+.icon-bounce:hover i {
+    transform: translateY(-3px) scale(1.08);
+    transition: transform 0.2s ease;
+}
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.btn-gradient,
+[data-theme="oscuro"] .btn-gradient,
+[data-theme="claro"] .btn-gradient {
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%) !important;
+    color: #ffffff !important;
+    border: none;
+    opacity: 1 !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-gradient:hover {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    transform: translateY(-2px);
+}
+
+.btn-hover-grow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(6, 182, 212, 0.4) !important;
+    color: #ffffff;
+}
+
+.btn-hover-glow:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.hero-text-card .btn-outline-light,
+[data-theme="claro"] .hero-text-card .btn-outline-light {
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    background-color: transparent !important;
+}
+
+.hero-text-card .btn-outline-light:hover,
+[data-theme="claro"] .hero-text-card .btn-outline-light:hover {
+    background-color: #0ea5e9 !important;
+    border-color: #0ea5e9 !important;
+    color: #ffffff !important;
+}
+
+/* =========================================
+   TARJETAS DE PROYECTOS
+========================================= */
+
+.card-project {
+    border-radius: 1rem;
+    overflow: hidden;
+    will-change: transform, box-shadow;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease !important;
+}
+
+.card-project:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.25) !important;
+}
+
+[data-theme="oscuro"] .card-project {
+    background-color: var(--fondo-secundario, #1e293b);
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+[data-theme="oscuro"] .card-project:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+}
+
+.tech-badge {
+    background-color: var(--fondo-secundario);
+    color: var(--texto);
+    border: 1px solid var(--borde);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.project-icon {
+    background-color: var(--fondo-secundario);
+    transition: background-color 0.3s ease;
+}
+
+.card-project:hover .project-icon i {
+    transform: scale(1.15);
+    transition: transform 0.3s ease;
+}
+
+/* =========================================
+   TEXTOS Y UTILIDADES DE TEMA
+========================================= */
+
+[data-theme="claro"] .text-muted {
+    color: #6c757d !important;
+}
+
+[data-theme="oscuro"] .text-muted {
+    color: #cbd5e1 !important;
+}
+
+[data-theme="oscuro"] .text-light {
+    color: #f8fafc !important;
+}
+
+[data-theme="oscuro"] .opacity-75 {
+    opacity: 1 !important;
+}
+
+[data-theme="oscuro"] .bg-light-subtle {
+    background-color: #1e293b !important;
+}
+
+[data-theme="claro"] .bg-light-subtle {
+    background-color: #f8f9fa !important;
+}
+
+/* =========================================
+   REPRODUCTOR Y VISOR PDF
+========================================= */
+
+video {
+    outline: none;
+    object-fit: cover;
+}
+
+[data-theme="oscuro"] .card-header {
+    background-color: #1e293b !important;
+}
+
+[data-theme="claro"] .card-header {
+    background-color: #f1f5f9 !important;
+}
+
+.pdf-container {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    min-height: 500px;
+}
+
+.pdf-iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.card-viewer {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-viewer:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35) !important;
+}
+
+[data-theme="oscuro"] .card-viewer .card-header {
+    background-color: #1e293b !important;
+}
+
+[data-theme="claro"] .card-viewer .card-header {
+    background-color: #0f172a !important;
+}
+
+/* =========================================================
+   OVERRIDE ABSOLUTO SOBRE BOOTSTRAP 5 Y MODO CLARO/OSCURO
+========================================================= */
+
+/* Fondo azul oscuro permanente para la navbar */
+body nav.navbar.navbar-tema,
+html[data-theme="claro"] body nav.navbar.navbar-tema,
+html[data-theme="oscuro"] body nav.navbar.navbar-tema,
+html[data-bs-theme="light"] body nav.navbar.navbar-tema,
+html[data-bs-theme="dark"] body nav.navbar.navbar-tema {
+    background-color: #0f172a !important;
+    background: #0f172a !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.2) !important;
+}
+
+/* Enlaces y marca siempre en blanco */
+body nav.navbar.navbar-tema .navbar-brand,
+body nav.navbar.navbar-tema .nav-link,
+html[data-bs-theme="light"] body nav.navbar.navbar-tema .nav-link,
+html[data-bs-theme="dark"] body nav.navbar.navbar-tema .nav-link {
+    color: #ffffff !important;
+}
+
+/* Hover de los enlaces */
+body nav.navbar.navbar-tema .nav-link-custom:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #38bdf8 !important;
+}
+
+/* Icono hamburguesa siempre visible en blanco */
+body nav.navbar.navbar-tema .navbar-toggler-icon {
+    filter: invert(1) !important;
+}
+
+/* Menú colapsable en móviles */
+@media (max-width: 991.98px) {
+    body nav.navbar.navbar-tema .navbar-collapse {
+        background-color: #0f172a !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+}
+
+
+/* =========================================================
+   FORZADO ABSOLUTO DE NAVBAR (ANULA BOOTSTRAP Y CUALQUIER TEMA)
+========================================================= */
+
+/* 1. Fondo azul noche permanente */
+nav.navbar,
+nav.navbar.navbar-tema,
+.navbar-tema,
+header nav.navbar {
+    background-color: #0f172a !important;
+    background: #0f172a !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.2) !important;
+}
+
+/* 2. Anular las variables internas de Bootstrap 5 que fuerzan colores claros */
+nav.navbar.navbar-tema {
+    --bs-navbar-color: #ffffff !important;
+    --bs-navbar-hover-color: #38bdf8 !important;
+    --bs-navbar-brand-color: #ffffff !important;
+    --bs-navbar-brand-hover-color: #ffffff !important;
+    --bs-navbar-bg: #0f172a !important;
+}
+
+/* 3. Forzar texto blanco en marca y enlaces */
+nav.navbar.navbar-tema :is(.navbar-brand, .nav-link, .nav-link-custom) {
+    color: #ffffff !important;
+}
+
+/* 4. Estado Hover en los enlaces */
+nav.navbar.navbar-tema .nav-link-custom:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #38bdf8 !important;
+}
+
+/* 5. Icono de menú móvil en blanco */
+nav.navbar.navbar-tema .navbar-toggler-icon {
+    filter: invert(1) !important;
+}
+
+/* 6. Fondo del menú colapsable en móviles */
+@media (max-width: 991.98px) {
+    nav.navbar.navbar-tema .navbar-collapse {
+        background-color: #0f172a !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+}
+
+video {
+    outline: none;
+    object-fit: contain; /* Cambiar de cover a contain */
+}
