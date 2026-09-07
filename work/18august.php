@@ -15,8 +15,10 @@ include('../Layout/navbarWork.php');
       Curriculum Vitae
     </h1>
     
-    <p class="lead text-muted mb-0 max-w-xl mx-auto fw-normal" data-es="Revisa la trayectoria académica y laboral directamente o descárgala en editable." data-en="Review academic and work experience directly or download an editable copy.">
-      Revisa la trayectoria académica y laboral directamente o descárgala en editable.
+    <p class="lead text-muted mb-0 max-w-xl mx-auto fw-normal" 
+       data-es="Juan Sebastián Duarte Vega es un aprendiz en tecnología en Análisis y Desarrollo de Software por parte del SENA (Centro de Desarrollo Agroindustrial y Empresarial), radicado en Villeta, Cundinamarca." 
+       data-en="Juan Sebastián Duarte Vega is a trainee in the Software Analysis and Development technology program at SENA (Agro-industrial and Business Development Center), based in Villeta, Cundinamarca.">
+      Juan Sebastián Duarte Vega es un aprendiz en tecnología en Análisis y Desarrollo de Software por parte del SENA (Centro de Desarrollo Agroindustrial y Empresarial), radicado en Villeta, Cundinamarca.
     </p>
   </div>
 </header>
@@ -34,13 +36,7 @@ include('../Layout/navbarWork.php');
           <div class="d-flex align-items-center gap-3">
             
             <!-- Imagen pequeña del perfil -->
-            <img src="../img/team-3.png" alt="Perfil" class="rounded-circle object-fit-cover shadow-sm me-1" style="width: 42px; height: 42px;">
-
-            <div class="d-none d-sm-flex align-items-center gap-2 me-2">
-              <span class="rounded-circle bg-danger d-inline-block" style="width: 12px; height: 12px;"></span>
-              <span class="rounded-circle bg-warning d-inline-block" style="width: 12px; height: 12px;"></span>
-              <span class="rounded-circle bg-success d-inline-block" style="width: 12px; height: 12px;"></span>
-            </div>
+            <img src="../img/team-3.png" alt="Perfil" class="rounded-circle object-fit-cover shadow-sm me-1" style="width: 70px; height: 70px;">
 
             <div>
               <span class="badge bg-primary bg-gradient text-white fw-semibold mb-1" data-es="Documento Oficial" data-en="Official Document">
@@ -67,6 +63,18 @@ include('../Layout/navbarWork.php');
               title="Visor de Curriculum Vitae PDF">
             </iframe>
           </div>
+        </div>
+
+        <!-- Resumen del perfil profesional debajo del PDF -->
+        <div class="card-footer bg-transparent border-top p-4">
+          <h3 class="h6 fw-bold mb-2" data-es="Descripción del perfil" data-en="Profile Description">
+            <i class="bi bi-info-circle me-2 text-primary"></i>Descripción del perfil
+          </h3>
+          <p class="text-muted mb-0 small" 
+             data-es="Juan Sebastián Duarte Vega es un aprendiz en tecnología en Análisis y Desarrollo de Software por parte del SENA (Centro de Desarrollo Agroindustrial y Empresarial), radicado en Villeta, Cundinamarca." 
+             data-en="Juan Sebastián Duarte Vega is a trainee in the Software Analysis and Development technology program at SENA (Agro-industrial and Business Development Center), based in Villeta, Cundinamarca.">
+            Juan Sebastián Duarte Vega es un aprendiz en tecnología en Análisis y Desarrollo de Software por parte del SENA (Centro de Desarrollo Agroindustrial y Empresarial), radicado en Villeta, Cundinamarca.
+          </p>
         </div>
 
         <!-- Pie de tarjeta -->

@@ -62,29 +62,30 @@
           <div class="row g-3">
             <div class="col-md-6">
               <label for="name" class="form-label fw-semibold text-muted small" data-es="Nombre" data-en="Name">Nombre</label>
-              <input type="text" class="form-control form-control-lg bg-light border-0 rounded-3 fs-6" id="name" name="name" placeholder="Tu nombre" required>
+              <input type="text" class="form-control form-control-lg bg-light border-0 rounded-3 fs-6" id="name" name="name" placeholder="Name" required>
             </div>
 
             <div class="col-md-6">
-              <label for="email" class="form-label fw-semibold text-muted small" data-es="Correo Electrónico" data-en="Email">Correo Electrónico</label>
-              <input type="email" class="form-control form-control-lg bg-light border-0 rounded-3 fs-6" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+              <label for="email" class="form-label fw-semibold text-muted small" data-es="Correo Electrónico" data-en="Email">Email</label>
+              <input type="email" class="form-control form-control-lg bg-light border-0 rounded-3 fs-6" id="email" name="email" placeholder="name@ejemplo.com" required>
             </div>
 
             <div class="col-12">
-              <label for="subject" class="form-label fw-semibold text-muted small" data-es="Asunto" data-en="Subject">Asunto</label>
-              <input type="text" class="form-control form-control-lg bg-light border-0 rounded-3 fs-6" id="subject" name="subject" placeholder="Asunto del mensaje" required>
+              <label for="subject" class="form-label fw-semibold text-muted small" data-es="Asunto" data-en="Subject">Subject</label>
+              <input type="text" class="form-control form-control-lg bg-light border-0 rounded-3 fs-6" id="subject" name="subject" placeholder="Subject" required>
             </div>
 
             <div class="col-12">
-              <label for="message" class="form-label fw-semibold text-muted small" data-es="Mensaje" data-en="Message">Mensaje</label>
-              <textarea class="form-control bg-light border-0 rounded-3 fs-6" id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+              <label for="message" class="form-label fw-semibold text-muted small" data-es="Mensaje" data-en="Message">Message</label>
+              <textarea class="form-control bg-light border-0 rounded-3 fs-6" id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
             </div>
 
             <div class="col-12 pt-2">
-              <button type="submit" class="btn btn-primary btn-lg px-4 rounded-3 fw-semibold shadow-sm d-inline-flex align-items-center gap-2">
-                <span data-es="Enviar Mensaje" data-en="Send Message">Enviar Mensaje</span>
-                <i class="bi bi-send"></i>
-              </button>
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=duartew349@gmail.com"
+                 target="_blank"
+                 class="btn btn-primary btn-lg px-4 rounded-3 fw-semibold">
+                  <span class="bi bi-envelope me-2" data-es="Enviar Mensaje" data-en="Send Message">Enviar Mensaje</span>
+              </a>
             </div>
           </div>
         </form>

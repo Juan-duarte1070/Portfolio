@@ -31,7 +31,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-light btn btn-return px-3 py-1 rounded-pill" href="../index.php#trabajos">
+                    <a class="nav-link text-light btn btn-return px-3 py-1 rounded-pill" href="index.php">
                         <i class="bi bi-arrow-left me-1"></i>
                         <span data-es="Volver" data-en="Return">Volver</span>
                     </a>

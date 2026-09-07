@@ -1,7 +1,11 @@
-/* =========================
-   VARIABLES GLOBALES
-========================= */
+/* =========================================
+   1. FUENTES DE GOOGLE FONTS (¡SIEMPRE PRIMERO!)
+========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
 
+/* =========================================
+   2. VARIABLES GLOBALES Y TEMA
+========================================= */
 :root {
     --fondo: #ffffff;
     --texto: #212529;
@@ -18,14 +22,21 @@
     --borde: #334155;
 }
 
-/* =========================
-   ESTILOS GENERALES
-========================= */
-
+/* =========================================
+   3. ESTILOS GENERALES
+========================================= */
 body {
+    font-family: 'Open Sans', sans-serif; /* Tipografía para el cuerpo */
+    font-size: 1rem;
+    line-height: 1.6;
     background-color: var(--fondo);
     color: var(--texto);
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Tipografía para los títulos */
+    font-weight: 700;
 }
 
 section {
@@ -294,8 +305,24 @@ video {
 .pdf-container {
     position: relative;
     width: 100%;
-    height: 75vh;
-    min-height: 500px;
+    height: 80vh;
+    min-height: 750px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 991.98px) {
+    .pdf-container {
+        height: 70vh;
+        min-height: 500px; /* antes 450px */
+    }
+}
+
+@media (max-width: 575.98px) {
+    .pdf-container {
+        height: 65vh;
+        min-height: 420px; /* antes 350px, muy corto para una slide */
+    }
 }
 
 .pdf-iframe {

@@ -11,12 +11,14 @@ include('../Layout/navbarWork.php');
       <i class="bi bi-file-earmark-slides me-1"></i> Presentación de Documento
     </span>
     
-    <h1 class="display-4 fw-black mb-3 tracking-tight" data-es="Exposición Slides" data-en="Slides Presentation">
-      Exposición Slides
+    <h1 class="display-4 fw-black mb-3 tracking-tight" data-es="Presentación de diapositivas" data-en="Slides Presentation">
+      Presentación de diapositivas
     </h1>
     
-    <p class="lead text-muted mb-0 max-w-xl mx-auto fw-normal" data-es="Visualiza el material en diapositivas o ábrelo directamente en tu navegador." data-en="View the slide material or open it directly in your browser.">
-      Visualiza el material en diapositivas o ábrelo directamente en tu navegador.
+    <p class="lead text-muted mb-0 max-w-xl mx-auto fw-normal" 
+       data-es="Se aborda un debate central dentro del ámbito social y económico: el impacto del turismo en las comunidades locales y si sus efectos son predominantemente positivos o negativos." 
+       data-en="A central debate within the social and economic sphere is addressed: the impact of tourism on local communities and whether its effects are predominantly positive or negative.">
+      Se aborda un debate central dentro del ámbito social y económico: el impacto del turismo en las comunidades locales y si sus efectos son predominantemente positivos o negativos.
     </p>
   </div>
 </header>
@@ -27,7 +29,7 @@ include('../Layout/navbarWork.php');
     <div class="col-lg-11 col-xl-10">
 
       <!-- Visor de tarjetas adaptado sin clases de temas oscuros fijos ni bordes personalizados -->
-      <div class="card border-0 rounded-4 shadow-lg overflow-hidden">
+      <div class="card border-0 rounded-4 shadow-lg" style="overflow: visible;">
 
         <!-- Barra superior del visor con controles tipo app -->
         <div class="card-header border-bottom p-3 p-md-4 d-flex justify-content-between align-items-center">
@@ -41,8 +43,8 @@ include('../Layout/navbarWork.php');
               <span class="badge bg-danger bg-gradient text-white fw-semibold mb-1" data-es="Documento PDF" data-en="PDF Document">
                 <i class="bi bi-file-earmark-pdf me-1"></i> Documento PDF
               </span>
-              <h2 class="h5 fw-bold mb-0" data-es="Presentación Diapositivas" data-en="Slide Presentation">
-                Presentación Diapositivas
+              <h2 class="h5 fw-bold mb-0" data-es="Impacto del Turismo en Comunidades Locales" data-en="Impact of Tourism on Local Communities">
+                Impacto del Turismo en Comunidades Locales
               </h2>
             </div>
           </div>
@@ -58,10 +60,21 @@ include('../Layout/navbarWork.php');
             <iframe
               src="../Document/Exposición.pdf"
               class="pdf-iframe w-100 border-0"
-              style="height: 80vh; min-height: 750px;"
               title="Visor de Presentación PDF">
             </iframe>
           </div>
+        </div>
+
+        <!-- Resumen del contenido debajo del PDF -->
+        <div class="card-footer bg-transparent border-top p-4">
+          <h3 class="h6 fw-bold mb-2" data-es="Descripción del documento" data-en="Document Description">
+            <i class="bi bi-info-circle me-2 text-primary"></i>Descripción del documento
+          </h3>
+          <p class="text-muted mb-0 small" 
+             data-es="En este material se aborda un debate central dentro del ámbito social y económico: el impacto del turismo en las comunidades locales y si sus efectos son predominantemente positivos o negativos." 
+             data-en="This material addresses a central debate within the social and economic sphere: the impact of tourism on local communities and whether its effects are predominantly positive or negative.">
+            En este material se aborda un debate central dentro del ámbito social y económico: el impacto del turismo en las comunidades locales y si sus efectos son predominantemente positivos o negativos.
+          </p>
         </div>
 
         <!-- Mensaje de ayuda en teléfonos móviles -->

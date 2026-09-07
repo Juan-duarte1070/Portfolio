@@ -24,7 +24,7 @@
             <p class="card-text text-muted flex-grow-1">
               <strong data-es="Descripción:" data-en="Description:">Descripción:</strong><br>
               <span data-es="se aborda un debate central dentro del ámbito social y económico: el impacto del turismo en las comunidades locales y si sus efectos son predominantemente positivos o negativos." data-en="A central debate within the social and economic sphere is addressed: the impact of tourism on local communities and whether its effects are predominantly positive or negative.">
-                Sistema backend dinámico para la consulta de bases de datos y la generación de reportes exportables en formato PDF.
+                se aborda un debate central dentro del ámbito social y económico: el impacto del turismo en las comunidades locales y si sus efectos son predominantemente positivos o negativos.
               </span>
             </p>
             <div class="d-flex justify-content-end align-items-center mt-3 pt-3 border-top">

@@ -15,8 +15,10 @@ include('../Layout/navbarWork.php');
       Ciudad Y Famoso
     </h1>
     
-    <p class="lead text-muted mb-0 max-w-xl mx-auto fw-normal" data-es="Visualiza la presentación en diapositivas sobre Cali Valle del Cauca o ábrela directamente en tu navegador." data-en="View the slide presentation on Cali Valle del Cauca or open it directly in your browser.">
-      Visualiza la presentación en diapositivas sobre Cali Valle del Cauca o ábrela directamente en tu navegador.
+    <p class="lead text-muted mb-0 max-w-xl mx-auto fw-normal" 
+       data-es="Es un documento informativo que combina una presentación sobre la ciudad de Cali con la descripción del futbolista Thomas Müller." 
+       data-en="It is an informative document that combines a presentation on the city of Cali with a description of the footballer Thomas Müller.">
+      Es un documento informativo que combina una presentación sobre la ciudad de Cali con la descripción del futbolista Thomas Müller.
     </p>
   </div>
 </header>
@@ -41,8 +43,8 @@ include('../Layout/navbarWork.php');
               <span class="badge bg-danger bg-gradient text-white fw-semibold mb-1" data-es="Documento PDF" data-en="PDF Document">
                 <i class="bi bi-file-earmark-pdf me-1"></i> Documento PDF
               </span>
-              <h2 class="h5 fw-bold mb-0" data-es="Diapositivas" data-en="Slides">
-                Diapositivas
+              <h2 class="h5 fw-bold mb-0" data-es="Cali & Thomas Müller" data-en="Cali & Thomas Müller">
+                Cali & Thomas Müller
               </h2>
             </div>
           </div>
@@ -62,6 +64,18 @@ include('../Layout/navbarWork.php');
               title="Visor de Diapositivas PDF">
             </iframe>
           </div>
+        </div>
+
+        <!-- Resumen del contenido debajo del PDF -->
+        <div class="card-footer bg-transparent border-top p-4">
+          <h3 class="h6 fw-bold mb-2" data-es="Descripción del documento" data-en="Document Description">
+            <i class="bi bi-info-circle me-2 text-primary"></i>Descripción del documento
+          </h3>
+          <p class="text-muted mb-0 small" 
+             data-es="Es un documento informativo que combina una presentación sobre la ciudad de Cali con la descripción del futbolista Thomas Müller." 
+             data-en="It is an informative document that combines a presentation on the city of Cali with a description of the footballer Thomas Müller.">
+            Es un documento informativo que combina una presentación sobre la ciudad de Cali con la descripción del futbolista Thomas Müller.
+          </p>
         </div>
 
         <!-- Mensaje de ayuda en teléfonos móviles -->

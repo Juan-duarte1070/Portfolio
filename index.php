@@ -16,13 +16,55 @@ include('Layout/navbar.php');
               <i class="bi bi-stars me-1"></i> Bienvenido
             </span>
             
-            <h1 class="display-4 fw-black mb-3 tracking-tight" data-es="Mi portafolio" data-en="My portfolio">
-              Transformando ideas en experiencias digitales
+            <h1 class="display-4 fw-black mb-3"
+                data-es="Mi Portafolio"
+                data-en="My Portfolio">
+                Mi Portafolio
             </h1>
-            
-            <p class="lead text-muted mb-4 max-w-xl fw-normal" data-es="este es mi portafolio de actividades" data-en="This is my portfolio of activities.">
-              Desarrollador enfocado en construir aplicaciones web dinámicas, interfaces intuitivas y soluciones backend robustas.
+
+            <h4 class="fs-4 fw-bold mb-3"
+                data-es="Juan Sebastian Duarte Vega"
+                data-en="Juan Sebastian Duarte Vega">
+                Juan Sebastian Duarte Vega
+            </h4>
+
+            <p class="lead text-muted mb-4 max-w-xl fw-normal"
+               data-es="Explora una colección de proyectos de desarrollo web, aplicaciones dinámicas y diseños de interfaces creados con PHP, JavaScript, MySQL y Bootstrap."
+               data-en="Explore a collection of web development projects, dynamic applications, and interface designs built with PHP, JavaScript, MySQL, and Bootstrap.">
+               Explora una colección de proyectos de desarrollo web, aplicaciones dinámicas y diseños de interfaces creados con PHP, JavaScript, MySQL y Bootstrap.
             </p>
+
+                        <!-- Card de formación SENA -->
+            <div class="card border-0 shadow-sm rounded-4 mb-4">
+              <div class="card-body p-3 d-flex align-items-center gap-3">
+
+                <div class="rounded-circle bg-danger bg-gradient text-white d-flex align-items-center justify-content-center flex-shrink-0"
+                     style="width: 50px; height: 50px;">
+                  <i class="bi bi-mortarboard-fill fs-4"></i>
+                </div>
+
+                <div>
+                  <small class="text-muted d-block fw-semibold"
+                         data-es="Formación académica"
+                         data-en="Academic Education">
+                    Formación académica
+                  </small>
+
+                  <h6 class="fw-bold mb-1"
+                      data-es="Tecnólogo en Análisis y Desarrollo de Software"
+                      data-en="Technologist in Software Analysis and Development">
+                    Tecnólogo en Análisis y Desarrollo de Software
+                  </h6>
+
+                  <span class="small text-muted"
+                        data-es="SENA · Actualmente estudiando"
+                        data-en="SENA · Currently studying">
+                    SENA · Actualmente estudiando
+                  </span>
+                </div>
+
+              </div>
+            </div>
             
             <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap pt-2">
               <a href="projectver.php" class="btn btn-gradient btn-lg px-4 shadow rounded-pill fw-semibold btn-hover-grow" data-es="Ver Proyectos" data-en="View Projects">
@@ -54,10 +96,10 @@ include('Layout/navbar.php');
 <section id="skills" class="py-5 mb-5">
   <div class="container">
     <div class="text-center mb-5">
-      <span class="badge bg-info bg-gradient text-dark px-3 py-2 rounded-pill mb-2 fw-bold shadow-sm" 
+      <!-- <span class="badge bg-info bg-gradient text-dark px-3 py-2 rounded-pill mb-2 fw-bold shadow-sm" 
             data-es="Habilidades" data-en="Skills">
         <i class="bi bi-code-slash me-1"></i> Habilidades
-      </span>
+      </span> -->
       <h2 class="fw-black" data-es="Mis Skills" data-en="My Skills">
         Lo que sé hacer
       </h2>
@@ -134,17 +176,6 @@ include('Layout/navbar.php');
         </div>
       </div>
 
-      <!-- API REST -->
-      <div class="col-6 col-md-4 col-lg-3">
-        <div class="p-4 rounded-4 shadow-sm border text-center h-100 btn-hover-grow">
-          <i class="bi bi-cloud-arrow-up fs-1 mb-2 text-info"></i>
-          <h6 class="fw-semibold mb-1">REST APIs</h6>
-          <div class="progress" style="height:6px;">
-            <div class="progress-bar bg-info" style="width:70%"></div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -154,11 +185,6 @@ include('Layout/navbar.php');
   <?php include('proyect.php'); ?>
 </section>
 
-
-<!-- Sección de Proyectos -->
-<section id="proyectos">
-  <?php include('proyect.php'); ?>
-</section>
 
 <?php 
 include('contact.php');

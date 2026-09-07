@@ -15,8 +15,10 @@ include('../Layout/navbarWork.php');
       CodeCraft: Legends of the Grid
     </h1>
     
-    <p class="lead text-muted mb-0 max-w-xl mx-auto fw-normal" data-es="Visualiza la propuesta y diseño del juego educativo o ábrela directamente en tu navegador." data-en="View the educational game proposal and design or open it directly in your browser.">
-      Visualiza la propuesta y diseño del juego educativo o ábrela directamente en tu navegador.
+    <p class="lead text-muted mb-0 max-w-xl mx-auto fw-normal" 
+       data-es="Propuesta de diseño para el juego educativo 'CodeCraft: Legends of the Grid'. Enseña lógica de programación a estudiantes mediante una narrativa interactiva." 
+       data-en="Design proposal for the educational game 'CodeCraft: Legends of the Grid'. Teaches programming logic through interactive narrative.">
+      Propuesta de diseño para el juego educativo 'CodeCraft: Legends of the Grid'. Enseña lógica de programación a estudiantes mediante una narrativa interactiva.
     </p>
   </div>
 </header>
@@ -62,6 +64,18 @@ include('../Layout/navbarWork.php');
               title="Visor de Presentación CodeCraft PDF">
             </iframe>
           </div>
+        </div>
+
+        <!-- Resumen del contenido debajo del PDF -->
+        <div class="card-footer bg-transparent border-top p-4">
+          <h3 class="h6 fw-bold mb-2" data-es="Descripción del documento" data-en="Document Description">
+            <i class="bi bi-info-circle me-2 text-primary"></i>Descripción del documento
+          </h3>
+          <p class="text-muted mb-0 small" 
+             data-es="Propuesta de diseño para el juego educativo 'CodeCraft: Legends of the Grid'. Enseña lógica de programación a estudiantes mediante una narrativa interactiva." 
+             data-en="Design proposal for the educational game 'CodeCraft: Legends of the Grid'. Teaches programming logic through interactive narrative.">
+            Propuesta de diseño para el juego educativo 'CodeCraft: Legends of the Grid'. Enseña lógica de programación a estudiantes mediante una narrativa interactiva.
+          </p>
         </div>
 
         <!-- Mensaje de ayuda en teléfonos móviles -->

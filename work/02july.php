@@ -17,9 +17,9 @@ include('../Layout/navbarWork.php');
 
         <p 
             class="lead text-muted mb-0 max-w-xl mx-auto fw-normal"
-            data-es="Exposición en video sobre conceptos en inglés."
-            data-en="Video presentation on English concepts.">
-            Exposición en video sobre conceptos en inglés.
+            data-es="Este video trata sobre la sincronización labial con audio, ya sea música o de otro tipo."
+            data-en="This video is about lip-syncing to audio, whether it is music or something else.">
+            Este video trata sobre la sincronización labial con audio, ya sea música o de otro tipo.
         </p>
     </div>
 </header>
@@ -52,6 +52,18 @@ include('../Layout/navbarWork.php');
                             </span>
                         </video>
                     </div>
+                </div>
+
+                <!-- Resumen del contenido debajo del Video -->
+                <div class="card-footer bg-transparent border-top p-4">
+                    <h2 class="h6 fw-bold mb-2" data-es="Descripción del video" data-en="Video Description">
+                        <i class="bi bi-info-circle me-2 text-primary"></i>Descripción del video
+                    </h2>
+                    <p class="text-muted mb-0 small" 
+                       data-es="Este video trata sobre la sincronización labial con audio, ya sea música o de otro tipo." 
+                       data-en="This video is about lip-syncing to audio, whether it is music or something else.">
+                        Este video trata sobre la sincronización labial con audio, ya sea música o de otro tipo.
+                    </p>
                 </div>
 
             </div>

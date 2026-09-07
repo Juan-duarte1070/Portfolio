@@ -15,8 +15,10 @@ include('../Layout/navbarWork.php');
       Menú Savors Of The House
     </h1>
     
-    <p class="lead text-muted mb-0 max-w-xl mx-auto fw-normal" data-es="Visualiza la carta y presentación del menú gastronómico o ábrela directamente en tu navegador." data-en="View the menu presentation or open it directly in your browser.">
-      Visualiza la carta y presentación del menú gastronómico o ábrela directamente en tu navegador.
+    <p class="lead text-muted mb-0 max-w-xl mx-auto fw-normal" 
+       data-es="El archivo PDF titulado 'Savors Of The House.pdf' es la presentación del menú para un restaurante gastronómico." 
+       data-en="The PDF titled 'Savors Of The House.pdf' is the menu presentation for a culinary restaurant.">
+      El archivo PDF titulado 'Savors Of The House.pdf' es la presentación del menú para un restaurante gastronómico.
     </p>
   </div>
 </header>
@@ -41,8 +43,8 @@ include('../Layout/navbarWork.php');
               <span class="badge bg-danger bg-gradient text-white fw-semibold mb-1" data-es="Documento PDF" data-en="PDF Document">
                 <i class="bi bi-file-earmark-pdf me-1"></i> Documento PDF
               </span>
-              <h2 class="h5 fw-bold mb-0" data-es="Menú" data-en="Menu">
-                Menú
+              <h2 class="h5 fw-bold mb-0" data-es="Menú Savors Of The House" data-en="Savors Of The House Menu">
+                Menú Savors Of The House
               </h2>
             </div>
           </div>
@@ -62,6 +64,18 @@ include('../Layout/navbarWork.php');
               title="Visor de Menú PDF">
             </iframe>
           </div>
+        </div>
+
+        <!-- Resumen del contenido debajo del PDF -->
+        <div class="card-footer bg-transparent border-top p-4">
+          <h3 class="h6 fw-bold mb-2" data-es="Descripción del documento" data-en="Document Description">
+            <i class="bi bi-info-circle me-2 text-primary"></i>Descripción del documento
+          </h3>
+          <p class="text-muted mb-0 small" 
+             data-es="El archivo PDF titulado 'Savors Of The House.pdf' es la presentación del menú para un restaurante gastronómico." 
+             data-en="The PDF titled 'Savors Of The House.pdf' is the menu presentation for a culinary restaurant.">
+            El archivo PDF titulado 'Savors Of The House.pdf' es la presentación del menú para un restaurante gastronómico.
+          </p>
         </div>
 
         <!-- Mensaje de ayuda en teléfonos móviles -->
