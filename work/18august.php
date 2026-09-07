@@ -36,7 +36,7 @@ include('../Layout/navbarWork.php');
           <div class="d-flex align-items-center gap-3">
             
             <!-- Imagen pequeña del perfil -->
-            <img src="../img/team-3.png" alt="Perfil" class="rounded-circle object-fit-cover shadow-sm me-1" style="width: 70px; height: 70px;">
+            <img src="../img/team-3.png" alt="Perfil" class="rounded-circle object-fit-cover shadow-sm me-1" style="width: 75px; height: 75px;">
 
             <div>
               <span class="badge bg-primary bg-gradient text-white fw-semibold mb-1" data-es="Documento Oficial" data-en="Official Document">
