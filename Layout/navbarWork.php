@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top shadow-sm navbar-tema py-2">
     <div class="container">
 
-        <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="../index.php">
+        <a class="navbar-brand fw-bold fs-4 d-flex align-items-center" href="../index.html">
             <i class="bi bi-code-slash text-info me-2 fs-3"></i>
             <span data-es="Portafolio" data-en="Portfolio">
                 Portafolio

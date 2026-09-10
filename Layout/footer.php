@@ -19,14 +19,8 @@
                 <a href="https://github.com/Juan-duarte1070" target="_blank" rel="noopener noreferrer" class="text-white" title="GitHub">
                     <i class="bi bi-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/tu-usuario" target="_blank" rel="noopener noreferrer" class="text-white" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/juan-sebastian-duarte-vega-b34b41434/" target="_blank" rel="noopener noreferrer" class="text-white" title="LinkedIn">
                     <i class="bi bi-linkedin"></i>
-                </a>
-                <a href="https://instagram.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="text-white" title="Instagram">
-                    <i class="bi bi-instagram"></i>
-                </a>
-                <a href="https://twitter.com/tu-usuario" target="_blank" rel="noopener noreferrer" class="text-white" title="X / Twitter">
-                    <i class="bi bi-twitter-x"></i>
                 </a>
             </div>
 
