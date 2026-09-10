@@ -15,7 +15,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="card card-project h-100 border-0 rounded-4 shadow-sm">
           <div class="project-icon p-4 text-center border-bottom bg-light-subtle rounded-top-4">
-            <i class="bi bi-file-earmark-pdf display-4 text-danger"></i>
+            <img src="img/p1.png" alt="Proyecto 1" class="img-fluid">
           </div>
           <div class="card-body d-flex flex-column p-4">
             <div class="mb-3 d-flex gap-1 flex-wrap">
@@ -40,7 +40,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="card card-project h-100 border-0 rounded-4 shadow-sm">
           <div class="project-icon p-4 text-center border-bottom bg-light-subtle rounded-top-4">
-            <i class="bi bi-file-earmark-pdf display-4 text-danger"></i>
+            <img src="img/p2.png" alt="Proyecto 1" class="img-fluid">
           </div>
           <div class="card-body d-flex flex-column p-4">
             <div class="mb-3 d-flex gap-1 flex-wrap">
@@ -66,7 +66,13 @@
         <div class="card card-project h-100 border-0 rounded-4 shadow-sm">
           <div class="project-icon p-4 text-center border-bottom bg-light-subtle rounded-top-4">
             <!-- Icono actualizado a video -->
+            <br>
+            <br>
+            <br>
             <i class="bi bi-film display-4 text-primary"></i>
+            <br>
+            <br>
+            <br>
           </div>
           <div class="card-body d-flex flex-column p-4">
             <div class="mb-3 d-flex gap-1 flex-wrap">
@@ -91,7 +97,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="card card-project h-100 border-0 rounded-4 shadow-sm">
           <div class="project-icon p-4 text-center border-bottom bg-light-subtle rounded-top-4">
-            <i class="bi bi-controller display-4 text-warning"></i>
+            <img src="img/p4.png" alt="Proyecto 1" class="img-fluid">
           </div>
           <div class="card-body d-flex flex-column p-4">
             <div class="mb-3 d-flex gap-1 flex-wrap">
@@ -116,7 +122,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="card card-project h-100 border-0 rounded-4 shadow-sm">
           <div class="project-icon p-4 text-center border-bottom bg-light-subtle rounded-top-4">
-            <i class="bi bi-cup-hot display-4 text-primary"></i>
+            <img src="img/p5.png" alt="Proyecto 1" class="img-fluid">
           </div>
           <div class="card-body d-flex flex-column p-4">
             <div class="mb-3 d-flex gap-1 flex-wrap">
@@ -141,7 +147,7 @@
       <div class="col-md-6 col-lg-4">
         <div class="card card-project h-100 border-0 rounded-4 shadow-sm">
           <div class="project-icon p-4 text-center border-bottom bg-light-subtle rounded-top-4">
-            <i class="bi bi-person-badge display-4 text-info"></i>
+            <img src="img/p6.png" alt="Proyecto 1" class="img-fluid">
           </div>
           <div class="card-body d-flex flex-column p-4">
             <div class="mb-3 d-flex gap-1 flex-wrap">
@@ -166,7 +172,7 @@
       <div class="col-md-6 col-lg-4 mx-auto">
         <div class="card card-project h-100 border-0 rounded-4 shadow-sm">
           <div class="project-icon p-4 text-center border-bottom bg-light-subtle rounded-top-4">
-            <i class="bi bi-file-earmark-code display-4 text-primary"></i>
+            <img src="img/p7.png" alt="Proyecto 1" class="img-fluid">
           </div>
           <div class="card-body d-flex flex-column p-4">
             <div class="mb-3 d-flex gap-1 flex-wrap">
@@ -190,4 +196,3 @@
     </div>
   </section>
 </main>
-
