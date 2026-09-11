@@ -28,9 +28,6 @@ include('proyect.php');
                         <i class="bi bi-whatsapp"></i>
                     </a>
                 </div>
-                <a href="mailto:duartew349@gmail.com" class="d-block text-secondary text-decoration-none small">
-                    <i class="bi bi-envelope-fill me-1"></i>duartew349@gmail.com
-                </a>
             </div>
 
             <!-- Proyectos -->

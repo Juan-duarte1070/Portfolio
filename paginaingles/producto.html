@@ -192,27 +192,16 @@ footer{background:#0f172a;color:#fff;padding:40px;text-align:center}footer p{mar
   <p data-es="© 2026 FeastSync. Todos los derechos reservados." data-en="© 2026 FeastSync. All Rights Reserved.">© 2026 FeastSync. Todos los derechos reservados.</p>
 </footer>
 
-<script>
-let idiomaActual = "es";
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- para work -->
+<script src="../js/tema.js"></script>
+<!-- para index.php -->
+<script src="js/tema.js"></script>
 
-document.getElementById("btnIdioma").addEventListener("click", function () {
-    const elementos = document.querySelectorAll("[data-es][data-en]");
-
-    if (idiomaActual === "es") {
-        elementos.forEach(elemento => {
-            elemento.textContent = elemento.getAttribute("data-en");
-        });
-        this.innerHTML = "🇨🇴 Español";
-        idiomaActual = "en";
-    } else {
-        elementos.forEach(elemento => {
-            elemento.textContent = elemento.getAttribute("data-es");
-        });
-        this.innerHTML = "🇺🇸 English";
-        idiomaActual = "es";
-    }
-});
-</script>
+<!-- para work -->
+<script src="../js/idioma.js"></script>
+<!-- para index.php -->
+<script src="js/idioma.js"></script>
 
 </body>
 </html>
